@@ -16,16 +16,25 @@
 		<h2>
 			<xsl:value-of select="title"/>
 		</h2>
-		<p>
-			<xsl:value-of select="year"/>
-		</p>
-		<p>
-			<xsl:value-of select="price"/>
+		
+			<ul>
+				<li>
+					<p><xsl:value-of select="year"/>
+					</p>
+				</li>
+			</ul>
+		
+		<ul>
+			<li>
+			<p>
+				<xsl:value-of select="price"/>
 			<span>
 			<xsl:value-of select="precio"/>
 		</span>
 		<xsl:value-of select="priceS"/>
 		</p>
+		  </li>
+		</ul>
 	</xsl:template>
 	
 </xsl:stylesheet>
